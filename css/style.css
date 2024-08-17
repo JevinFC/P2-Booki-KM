@@ -120,6 +120,28 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+.logo-booki{
+    width: 61px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.liste-nav ul{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+ul a:hover{
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    padding-top: 30px;
+}
+
 
 
 
