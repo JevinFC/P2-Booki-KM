@@ -240,7 +240,7 @@ ul a:hover{
     margin-bottom: 30px;
 }
 .card:hover{
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2)); 
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3)); 
 }
 
 .card-h img{
@@ -263,7 +263,7 @@ ul a:hover{
     padding-left: 15px;
 }
 .card-h:hover{
-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));    
+filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));    
 }
 .card-h-rating{
     margin-left: 15px;
@@ -284,6 +284,42 @@ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.2));
     font-size: 18px;
     padding: 5px;
 }
+
+/*Activités*/
+
+.activites h2{
+    margin-left: 30px;
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+.card-activites{
+    background-color: white;
+    height: 439px;
+    width: 297px;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    margin-bottom: 30px;
+}
+.card-activites img{
+    border-radius: 20px 20px 0px 0px;
+    height: 380px;
+    width: 297px;
+    object-fit: cover;
+}
+.container-card-activites{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.card-title-a{
+    margin: 19px;
+    font-size: 16px;
+}
+.card-activites:hover{
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+}
+
 
 
 
