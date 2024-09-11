@@ -95,8 +95,8 @@ a {
 .populaires-cards img {
     width: 33%;
     height: 136px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .populaires-cards .card-content {
@@ -125,7 +125,7 @@ a {
 /*header*/
 .logo-booki{
     width: 61px;
-    margin-left: -20px;
+    margin-left: -10px;
 }
 header{
     display: flex;
@@ -153,19 +153,20 @@ header{
     margin-bottom: 35px;
     width: fit-content;
     border-radius: 12px;
-    overflow: hidden;
+    width: 100%;
 
     
-        i{
+        #map{
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 10px 8px 10px 8px;
             height: 29px;
-            width: 50px;
+            width: 39px;
             font-size: 20px;
             background-color: var(--main-bg-color);
             border-radius: 15px 0px 0px 15px;
+            color: black;
         }
         #search{
             border: none;
@@ -187,6 +188,9 @@ header{
             height: 49px;
             padding: 15px 16px;
             cursor: pointer;
+        }
+        #lens-icon{
+            display: none;
         }
 }
 /*Filtres*/
@@ -213,6 +217,9 @@ header{
     cursor: pointer;
     margin: 10px;
 }
+.every-button{
+    display: flex;
+}
 .bouton:hover{
     background-color: var(--filter-bg-color);
 }
@@ -224,6 +231,10 @@ header{
     margin-top: 35px;
 }
 /*Cards*/
+.marseille{
+    margin-right: 10px;
+    width: 65%;
+}
 .card-hebergement-row1{
     display: flex;
     justify-content: space-around;
@@ -247,7 +258,7 @@ header{
     display: flex;
     width: 100%;
     height: 124px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
     object-fit:cover;
     
 }
@@ -256,6 +267,10 @@ header{
     margin-bottom: 4px;
     margin-left: 15px;
     margin-top: 4px;
+}
+.card-title-a{
+    position: relative;
+    bottom: 10px;
 }
 .card-h-subtitle{
     margin:0px;
@@ -276,7 +291,6 @@ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
 .card-hebergement-row2{
     display: flex;
     justify-content: space-around;
-    align-items: center;
     gap: 20px;
     width: 100%;
 }
@@ -296,10 +310,13 @@ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
 .card-activites{
     background-color: white;
     height: 439px;
-    width: 297px;
+    width: 100%;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    margin-bottom: 30px;
+    margin-bottom: 65px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 .card-activites img{
     border-radius: 20px 20px 0px 0px;
@@ -309,12 +326,18 @@ filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
 }
 .container-card-activites{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+    justify-content: space-between;
+    padding-right: 2.2%;
+    padding-left: 2.2%;
+    /*align-items: center;*/
+    /*gap: 30px;*/
+}
+.a-activites{
+    width: 23%;
 }
 .card-title-a{
-    margin: 19px;
+    margin-top: 19px;
+    margin-left: 19px;
     font-size: 16px;
 }
 .card-activites:hover{
@@ -353,7 +376,19 @@ footer{
     .main-container{
         width: 100%;
     }
-    
+    .search-bar{
+        width: 100%;
+    }
+    .filters{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    /* .every-button{
+        flex-wrap: wrap; si jamais le flex wrap est à mettre ici
+    }*/
+    .marseille{
+        width: 100%;
+    }
     .card-hebergement-row1{
         display: flex;
         flex-direction: row;
@@ -367,6 +402,7 @@ footer{
     }
     .container-card-activites{
         width: 100%;
+        gap: 30px;
     }
     .container-card-activites a{
         width: 100%;
@@ -403,11 +439,11 @@ footer{
     }
 
     .populaires-cards .card-title {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .populaires-cards .card-subtitle {
-        font-size: 13px;
+        font-size: 14px;
     }
     footer{
         gap: 122px;
@@ -415,6 +451,6 @@ footer{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (max-width: 768px) {
+
 }
