@@ -125,13 +125,12 @@ a {
 /*header*/
 .logo-booki{
     width: 61px;
-    margin-left: -10px;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px;
+    margin-top: 20px;
 }
 .liste-nav ul{
     display: flex;
